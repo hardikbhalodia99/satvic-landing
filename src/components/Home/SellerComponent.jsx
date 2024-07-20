@@ -14,7 +14,7 @@ const SellerComponent = ({ data,setSelectedItem }) => {
             <div className="flex flex-row justify-between">
               <div className="text-lg font-semibold">{data.title}</div>
               {data.tag && (
-                <div className="flex flex-row gap-2 bg-[#337AB71A] rounded-xl items-center p-1 px-3">
+                <div className="md:flex hidden flex-row  gap-2 bg-[#337AB71A] rounded-xl items-center p-1 px-3">
                   <div>
                     <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -54,8 +54,8 @@ const SellerComponent = ({ data,setSelectedItem }) => {
                   >
                     <div> {element.svg}</div>
                     <div className="flex flex-col gap-1">
-                      <div className="text-2xs">{element.title}</div>
-                      <div className="text-[#818184] text-3xs -mt-1">{element.description}</div>
+                      <div className="text-2xs whitespace-nowrap">{element.title}</div>
+                      <div className="text-[#818184] text-3xs -mt-1 whitespace-nowrap">{element.description}</div>
                     </div>
                   </div>
                 </>
