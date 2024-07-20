@@ -73,11 +73,11 @@ const SellerComponent = ({ data,setSelectedItem }) => {
             </div>
             <div className="text-sm font-semibold">{data.price}</div>
           </div>
-          <div className="flex flex-row gap-5 items-center ">
-            <button onClick={()=>{setSelectedItem(data)}} className="bg-[#337AB7] text-white leading-6 p-3 rounded-lg font-bold text-[18px] px-12 lg:px-5">
+          <div className="flex flex-row gap-5 items-center w-full">
+            <button onClick={()=>{setSelectedItem(data)}} className="bg-[#337AB7] w-full whitespace-nowrap text-white leading-6 p-3 rounded-lg font-bold text-[18px]  lg:px-5">
               Join the challenge
             </button>
-            <button className="border-[#337AB7] border-2 text-[#337AB7] leading-6 p-3 rounded-lg text-[18px] font-bold px-8 lg:px-5">
+            <button className="border-[#337AB7] border-2 w-full text-[#337AB7] whitespace-nowrap leading-6 p-3 rounded-lg text-[18px] font-bold  lg:px-5">
               View details
             </button>
           </div>
